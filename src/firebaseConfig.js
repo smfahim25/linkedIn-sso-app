@@ -3,13 +3,13 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBKXZ2NBm0S7KyhwyBkIVlL5FXZa7OmRvw",
-  authDomain: "linkedinsso.firebaseapp.com",
-  projectId: "linkedinsso",
-  storageBucket: "linkedinsso.appspot.com",
-  messagingSenderId: "865001467799",
-  appId: "1:865001467799:web:5d5d2761e1c458cd0a1ed2",
-  measurementId: "G-1L786N5W6C",
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  projectId: process.env.PROJECT_ID,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID,
+  appId: process.env.APP_ID,
+  measurementId: process.env.MEASUREMENT_ID,
 };
 
 // Initialize Firebase
